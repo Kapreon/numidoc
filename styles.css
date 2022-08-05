@@ -1,0 +1,352 @@
+// ---------------------------------
+// GLOBAL
+// ---------------------------------
+
+footer {
+    display: none !important
+}
+
+:root {
+	--jaune110: #F5A55C;
+	--jaune2: #F5A55C;
+	--jaune1: #F5BE5C;
+	--noir: #242423;
+	--blanc: #EFEFEF;
+	--ff: 'Manrope', sans-serif
+}
+
+* {
+	font-family: var(--ff) !important
+}
+
+.v-main .contents {
+	color: var(--noir);
+	max-width: 1200px
+}
+
+#root .v-application .overline,
+#root .v-application .v-btn__content {
+	text-transform: none;
+	letter-spacing: 0 !important;
+	font-family: var(--ff) !important;
+	font-weight: 600
+}
+
+#root .theme--dark.v-list {
+	color: var(--jaune1);
+}
+
+#root .theme--dark.v-list .v-list-item--active .v-list-item__title {
+	font-weight: 600;
+}
+
+// ---------------------------------
+// COLORS
+// ---------------------------------
+
+.theme--dark .v-main {
+	background: var(--noir)
+}
+
+#root .v-application .primary {
+	background: var(--jaune1) !important;
+	border-color: var(--jaune1) !important
+}
+
+#root .v-application .primary i {
+	color: var(--noir)
+}
+
+#root .v-application .blue.darken-3 {
+	background: var(--rouge120) !important;
+	border-color: var(--rouge120) !important
+}
+
+#root .v-application .blue.darken-2 {
+	background: var(--rouge110) !important;
+	border-color: var(--rouge110) !important
+}
+
+#root .v-application .blue--text.text--lighten-2,
+#root .v-application .indigo--text,
+#root .v-application .teal--text.text--lighten-3 {
+	color: var(--blanc) !important
+}
+
+#root .v-application .grey.darken-5 {
+	background-color: var(--noir) !important
+}
+
+#root .v-application .teal.darken-1 {
+	background: var(--jaune1) !important;
+	border-color: var(--jaune1) !important
+}
+
+#root .v-application .blue-grey--text {
+	color: var(--blanc) !important;
+	caret-color: var(--blanc) !important
+}
+
+#root .v-application .teal.darken-1 i,
+#root .v-application .teal.darken-1 span {
+	color: var(--noir) !important;
+	font-weight: 600
+}
+
+// ---------------------------------
+// TABLES
+// ---------------------------------
+#root .v-main .contents table tbody {
+	background: var(--noir)
+}
+
+#root .v-main .contents table tr td {
+	border: 1px solid #383837;
+	box-shadow: none
+}
+
+// ---------------------------------
+// LINKS
+// ----------------------------------
+.v-main .contents a {
+	color: var(--jaune1)
+}
+
+.v-main .contents a.is-external-link,
+.v-main .contents a.is-internal-link {
+	color: var(--jaune1);
+	position: relative;
+	text-decoration: none
+}
+
+.v-main .contents a.is-external-link::before,
+.v-main .contents a.is-internal-link::before {
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	left: 0;
+	bottom: -2px;
+	content: "";
+	background: var(--jaune1)
+}
+
+.v-main .contents a.is-internal-link.is-invalid-page .theme--dark {
+	color: var(--jaune1)
+}
+
+.v-main .contents a.is-external-link::after {
+	color: var(--jaune1)
+}
+
+.v-main .contents h2,
+.v-main .contents h3,
+.v-main .contents h4,
+.v-main .contents h5,
+.v-main .contents h6,
+
+// ---------------------------------
+// HEADERS
+// ---------------------------------
+.v-main .contents h1 {
+	color: var(--noir)
+}
+
+.v-main .contents h1,
+.v-main .contents h2,
+.v-main .contents h3,
+.v-main .contents h4,
+.v-main .contents h5,
+.v-main .contents h6+hr.footnotes-sep {
+	color: var(--noir);
+	max-width: 700px
+}
+
+.theme--dark .v-main .contents h1,
+.theme--dark .v-main .contents h2,
+.theme--dark .v-main .contents h3,
+.theme--dark .v-main .contents h4,
+.theme--dark .v-main .contents h5,
+.theme--dark .v-main .contents h6+hr.footnotes-sep {
+	color: var(--blanc)
+}
+
+.v-main .contents h1,
+.v-main .contents h2,
+.v-main .contents h3,
+.v-main .contents h4,
+.v-main .contents h5,
+.v-main .contents h6 {
+	font-weight: 600
+}
+
+.v-main .contents h1 {
+	font-size: 4.5rem;
+	line-height: 5.375rem
+}
+
+.v-main .contents h2 {
+	font-size: 4rem;
+	line-height: 4.75rem
+}
+
+.v-main .contents h3 {
+	font-size: 3.5rem;
+	line-height: 4.25rem
+}
+
+.v-main .contents h4 {
+	font-size: 2.125rem;
+	line-height: 2.75rem
+}
+
+.v-main .contents h5 {
+	font-size: 1.75rem;
+	line-height: 2.25rem
+}
+
+.v-main .contents h6 {
+	font-size: 1.25rem;
+	line-height: 1.75rem
+}
+
+.v-main .contents h2:root .theme--dark,
+.v-main .contents h3:root .theme--dark,
+.v-main .contents h4:root .theme--dark,
+.v-main .contents h5:root .theme--dark,
+.v-main .contents h6:root .theme--dark {
+	color: var(--noir)
+}
+
+.v-main .contents h1::after,
+.v-main .contents h2::after,
+.v-main .contents h3::after,
+.v-main .contents h4::after,
+.v-main .contents h5::after,
+.v-main .contents h6::after {
+	display: none
+}
+
+// ---------------------------------
+// PARAGRAPHS
+// ---------------------------------
+.v-main .contents p {
+	line-height: 28px
+}
+
+.v-main .contents hr {
+	height: 2px;
+	border: none;
+	background-color: var(--noir)
+}
+
+.theme--dark .v-main .contents hr {
+	background-color: var(--blanc)
+}
+
+.v-main .contents blockquote {
+	border-left: 2.5px solid var(--noir);
+	border-radius: 0;
+	margin: 1rem 2rem;
+	background: 0 0;
+	color: var(--noir100);
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2.5rem
+}
+
+.theme--dark .v-main .contents blockquote {
+	background: var(--jaune1);
+	color: var(--noir);
+	font-weight: 600;
+	border-left: none
+}
+
+.v-main .contents blockquote::before {
+	color: var(--jaune1)
+}
+
+.theme--dark .v-main .contents blockquote::before {
+	color: var(--blanc)
+}
+
+.v-main .contents ul:not(.tabset-tabs):not(.contains-task-list),
+// ---------------------------------
+// LISTS
+// ---------------------------------
+.v-main .contents ul:not(.tabset-tabs) {
+	list-style: none
+}
+
+.v-main .contents ul:not(.tabset-tabs):not(.contains-task-list)>li::before {
+	content: '\25CF';
+	color: var(--noir100)
+}
+
+// ---------------------------------
+// CODE
+// ---------------------------------
+.v-main .contents code {
+	background-color: red;
+	padding: 0 5px;
+	color: mc('indigo', '800');
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 1rem;
+	box-shadow: none
+}
+
+.v-main .contents .prismjs {
+	background: var(--noir)
+}
+
+.comments-container {
+	border-radius: 0;
+	border: 1px solid #383837
+}
+
+#discussion .comments-header {
+	color: var(--blanc);
+	padding: 16px 20px;
+	border-radius: 6px 6px 0 0;
+	background: 0 0;
+	border-bottom: 1px solid #383837
+}
+
+#discussion .comments-header i {
+	color: var(--noir100)
+}
+
+#discussion .comments-main {
+	background: 0 0;
+	border-radius: 0
+}
+
+#discussion .v-textarea {
+	border-radius: 0;
+	border-bottom: 2px solid var(--blanc)
+}
+
+#discussion .v-textarea fieldset {
+	border: none;
+	background: 0 0
+}
+
+#discussion .v-textarea .v-input__slot {
+	background: var(--noir) !important
+}
+
+#discussion button {
+	background: var(--jaune1) !important;
+	color: var(--noir) !important;
+	font-weight: 600;
+	border-radius: 100px !important;
+	letter-spacing: 0 !important
+}
+
+#discussion button i::before {
+	font-size: 16px !important
+}
+
+#discussion button.v-icon {
+	padding: 10px
+}
