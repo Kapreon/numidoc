@@ -185,23 +185,25 @@ footer {
 }
 
 .v-main .contents h2 {
-	font-size: 4rem;
-	line-height: 4.75rem
+	font-size: 3.5rem;
+	line-height: 4.25rem;
+    margin-top: 70px
 }
 
 .v-main .contents h3 {
-	font-size: 3.5rem;
-	line-height: 4.25rem
+	font-size: 2.125rem;
+	line-height: 2.75rem;
+    margin-top: 30px
 }
 
 .v-main .contents h4 {
-	font-size: 2.125rem;
-	line-height: 2.75rem
+	font-size: 1.75rem;
+	line-height: 2.25rem
 }
 
 .v-main .contents h5 {
-	font-size: 1.75rem;
-	line-height: 2.25rem
+	font-size: 1.25rem;
+	line-height: 1.75rem
 }
 
 .v-main .contents h6 {
@@ -230,7 +232,7 @@ footer {
 // PARAGRAPHS
 // ---------------------------------
 .v-main .contents p {
-	line-height: 28px
+	line-height: 28px;
 }
 
 .v-main .contents hr {
@@ -246,7 +248,7 @@ footer {
 .v-main .contents blockquote {
 	border-left: 2.5px solid var(--noir);
 	border-radius: 0;
-	margin: 1rem 2rem;
+	margin: 3rem 2rem;
 	background: 0 0;
 	color: var(--noir100);
 	font-weight: 500;
