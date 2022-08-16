@@ -270,15 +270,11 @@ footer {
 	margin: 3rem 2rem;
 	background: 0 0;
 	color: var(--noir100);
-	font-weight: 500;
-	font-size: 1.5rem;
-	line-height: 2.5rem
 }
 
 .theme--dark .v-main .contents blockquote {
 	background: var(--jaune1);
 	color: var(--noir);
-	font-weight: 600;
 	border-left: none
 }
 
