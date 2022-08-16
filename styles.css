@@ -11,6 +11,7 @@ footer {
 	--jaune2: #F5A55C;
 	--jaune1: #F5BE5C;
 	--noir: #242423;
+    --noir50: #383837;
 	--blanc: #EFEFEF;
 	--ff: 'Manrope', sans-serif
 }
@@ -44,8 +45,9 @@ footer {
 // COLORS
 // ---------------------------------
 
+
 .theme--dark .v-main {
-	background: var(--noir)
+	background: var(--noir) !important
 }
 
 #root .v-application .primary {
@@ -69,12 +71,18 @@ footer {
 
 #root .v-application .blue--text.text--lighten-2,
 #root .v-application .indigo--text,
-#root .v-application .teal--text.text--lighten-3 {
+#root .v-application .teal--text.text--lighten-3,
+#root .v-application .grey--text.text--lighten-2 {
 	color: var(--blanc) !important
 }
 
-#root .v-application .grey.darken-5 {
-	background-color: var(--noir) !important
+
+#root .v-application .grey.darken-5,
+#root .v-application .grey.darken-4-d3,
+#root .v-application .grey.darken-4-l3,
+#root .v-application .grey.darken-4-d4 {
+	background-color: var(--noir) !important;
+    border-color: var(--noir50) !important
 }
 
 #root .v-application .teal.darken-1 {
@@ -82,7 +90,8 @@ footer {
 	border-color: var(--jaune1) !important
 }
 
-#root .v-application .blue-grey--text {
+#root .v-application .blue-grey--text,
+#root .v-application .grey--text.text--darken-1 {
 	color: var(--blanc) !important;
 	caret-color: var(--blanc) !important
 }
@@ -101,7 +110,7 @@ footer {
 }
 
 #root .v-main .contents table tr td {
-	border: 1px solid #383837;
+	border: 1px solid var(--noir50);
 	box-shadow: none
 }
 
@@ -173,9 +182,7 @@ footer {
 .v-main .contents h1,
 .v-main .contents h2,
 .v-main .contents h3,
-.v-main .contents h4,
-.v-main .contents h5,
-.v-main .contents h6 {
+.v-main .contents h4 {
 	font-weight: 600
 }
 
@@ -185,30 +192,28 @@ footer {
 }
 
 .v-main .contents h2 {
-	font-size: 3.5rem;
-	line-height: 4.25rem;
-    margin-top: 70px
-}
-
-.v-main .contents h3 {
 	font-size: 2.125rem;
 	line-height: 2.75rem;
     margin-top: 30px
 }
 
-.v-main .contents h4 {
-	font-size: 1.75rem;
+.v-main .contents h3 {
+	font-size: 1.5rem;
 	line-height: 2.25rem
 }
 
-.v-main .contents h5 {
+.v-main .contents h4 {
 	font-size: 1.25rem;
 	line-height: 1.75rem
 }
 
+.v-main .contents h5 {
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+}
+
 .v-main .contents h6 {
-	font-size: 1.25rem;
-	line-height: 1.75rem
+	font-size: 1rem
 }
 
 .v-main .contents h2:root .theme--dark,
@@ -226,6 +231,20 @@ footer {
 .v-main .contents h5::after,
 .v-main .contents h6::after {
 	display: none
+}
+
+#app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.darken-4-l3 > div {
+  height: 280px !important;
+}
+
+#app > div.v-application--wrap > main > div > div.container.grey.pa-0.container--fluid.darken-4-l3 > div > div > div.headline.grey--text.text--lighten-2 {
+  font-size: 3.5rem !important;
+  font-weight: 500;
+  line-height: 4.25rem;
+}
+
+#root .v-application .caption {
+  font-size: 0.875rem !important;
 }
 
 // ---------------------------------
@@ -303,7 +322,7 @@ footer {
 
 .comments-container {
 	border-radius: 0;
-	border: 1px solid #383837
+	border: 1px solid var(--noir50)
 }
 
 #discussion .comments-header {
@@ -311,7 +330,7 @@ footer {
 	padding: 16px 20px;
 	border-radius: 6px 6px 0 0;
 	background: 0 0;
-	border-bottom: 1px solid #383837
+	border-bottom: 1px solid var(--noir50)
 }
 
 #discussion .comments-header i {
